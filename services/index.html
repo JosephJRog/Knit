@@ -815,7 +815,7 @@
 <p>Be sure to use <code>RemoteEvent</code> (<em>not</em> <code>Event</code>) for client-exposed events.</p>
 </div>
 <h3 id="events-client-to-server">Events (Client-to-Server)<a class="headerlink" href="#events-client-to-server" title="Permanent link">&para;</a></h3>
-<p>Events can also be fired from the client. This is useful when the client needs to give the server information, but doesn't care about any response from the server. For instance, maybe the client wants to tell the PointsService that it wants some points. This is an odd use-case, but let's just role with it.</p>
+<p>Events can also be fired from the client. This is useful when the client needs to give the server information, but doesn't care about any response from the server. For instance, maybe the client wants to tell the PointsService that it wants some points. This is an odd use-case, but let's just roll with it.</p>
 <p>We will create another client-exposed event called <code>GiveMePoints</code> which will randomly give the player points. Again, this is nonesense in the context of an actual game, but useful for example.</p>
 <p>Let's create the event on the PointsService:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">PointsService</span><span class="p">.</span><span class="n">Client</span><span class="p">.</span><span class="n">GiveMePoints</span> <span class="o">=</span> <span class="n">RemoteEvent</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
@@ -867,7 +867,7 @@
 </td></tr></table>
 
 <h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
-<p>Knit provides a <code>RemoteProperty</code> module to easily expose valuse to the client. These values are read-only on the client.</p>
+<p>Knit provides a <code>RemoteProperty</code> module to easily expose values to the client. These values are read-only on the client.</p>
 <p>For our example, let's say that we want to show the most points in the game. First, let's create the <code>RemoteProperty</code> object:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
